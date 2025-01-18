@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/form.css') }}">
+<style>
+    
+    .content {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .zoomed {
+        transform: scale(1.2);
+    }
+</style>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="content" id="con" onclick="toggleZoom()">
+        <h2>Create a new account</h2>
+        <form action="/login" method="post">
+            <label for="username">Enter your name:</label>
+            <input type="text" placeholder="e.g., John" name="username" required>
+
+            <label for="email">Enter your email:</label>
+            <input type="email" placeholder="e.g., john@gmail.com" name="email" required>
+
+            <label for="password">Enter your password:</label>
+            <input type="password" placeholder="e.g., 1d*(^*(Dsaf))" name="password" required>
+            {%if message%}
+            <p>{{message}}</p>
+            {%endif%}
+            <p>Already have one?
+            <a href="/login">login
+
+            </a>
+            </p>
+
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</div>
+<script>
+    const container = document.getElementById("con");
+
+    
+    function toggleZoom() {
+        if (!container.classList.contains("zoomed")) {
+            container.classList.add("zoomed");
+        }
+    }
+</script>
+{% endblock %}
+
