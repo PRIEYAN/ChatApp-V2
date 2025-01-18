@@ -18,7 +18,7 @@
 <div class="container">
     <div class="content" id="con" onclick="toggleZoom()">
         <h2>Create a new account</h2>
-        <form action="/login" method="post">
+        <form action="/signin" method="post">
             <label for="username">Enter your name:</label>
             <input type="text" placeholder="e.g., John" name="username" required>
 
@@ -36,7 +36,13 @@
             </a>
             </p>
 
-            <input type="submit" value="Login">
+            <input type="submit" value="Create">
+            <center>OR</center>
+            
+            <center>  <a href="{{ url_for('google_login') }}" class="googleButton">
+                  <img id="google" src="https://www.google.co.in/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" width="150px" alt="Google">
+              </a></center>
+          
         </form>
     </div>
 </div>

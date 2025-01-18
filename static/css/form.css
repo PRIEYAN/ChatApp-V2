@@ -97,10 +97,10 @@ form input[type="submit"].clicked {
     color: white;
     border-color: black;
 }
-a{
+form p a{
     color: blue;
 }
-a:visited{
+form p a:visited{
     color: red;
 }
 @media (max-width: 768px) {
@@ -129,4 +129,10 @@ a:visited{
     form input::placeholder {
         font-size: 10px;
     }
+}
+.googleButton{
+    transition: 0.5s;
+}
+.googleButton:hover{
+    box-shadow: 10px -40px 60px rgba(255, 255, 255, 0.445);
 }

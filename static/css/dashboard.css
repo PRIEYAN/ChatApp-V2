@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fc;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #222;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logout-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.navbar .logout-btn:hover {
+    background-color: #e60000;
+}
+
+.profile-menu {
+    position: relative;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profile-dropdown {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: white;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 10px;
+    width: 200px;
+    z-index: 100;
+}
+
+.profile-dropdown p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.profile-dropdown p strong {
+    color: #333;
+}
+
+.dashboard {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+.content form input{
+    padding:10px;
+    width: 280px;
+}
+button{
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #555;
+    color: white;
+    transition: 0.3s;
+}
+button:hover{
+    background-color: #333;
+}
+.rooms{
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.rooms ul {
+    position: relative;
+    left: -20px;
+}
+.rooms ul a{
+    text-decoration: none;
+    border: 2px double #ff4d4d;
+    border-radius: 6px;
+    padding: 10px;
+    color: black    ;
+    transition: 0.3s ease;
+}
+.rooms ul a:hover{
+    background-color: #e60000;
+    color: white;
+}
+.rooms ul a:active{
+    background-color: red;
+}
